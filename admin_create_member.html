@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Co-space</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- script for modal -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <ul class="nav ">
+    <li class="nav-item">
+      <a href="" class="nav-link active" href="#">Cospace</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="login.html">Logout</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Admin</a>
+    </li>
+  </ul>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3"> 
+        <div class="nav navbar">
+          
+          <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_invoices.html">
+                    Invoices
+                  </a>
+                </ul>
+            </div>
+          <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_calendar.html">
+                    Calendar
+                  </a>
+                </ul>
+            </div>
+        
+          <div class="w-100"></div>
+            <div class="col-3">
+              <ul class="nav-item">
+                  <a class="nav-link" href="admin_profile.html">
+                    Profile
+                  </a>
+              </ul>
+            </div>
+
+          <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_settings.html">
+                    Settings
+                  </a>
+                </ul>
+            </div>
+
+             <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_members.html">
+                    Members
+                  </a>
+                </ul>
+            </div>
+
+            <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_resource.html">
+                    Resources
+                  </a>
+                </ul>
+            </div>
+
+        <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_rooms.html">
+                    Rooms
+                  </a>
+                </ul>
+            </div>
+
+        <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_analytics_bookings.html">
+                    Analytics
+                  </a>
+                </ul>
+            </div>
+            
+          </div>
+      </div> <!-- nav bar column -->
+
+      <div class="col-9"> <!-- members code goes here -->
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a href="admin_members.html" class="nav-link">Members</a></li>
+          <li class="nav-item"><a href="admin_void_members.html" class="nav-link">Void Members</a></li>
+          <li class="nav-item"><a href="admin_create_member.html" class="nav-link active"><strong>Create Member</strong></a></li>
+        </ul>
+        
+        <!-- member's creator -->
+        <form>
+          <div class="form-group">
+            <h3 class="form-control-plaintext">Enter details</h3>
+
+            <label for="memberInputName">Name</label>
+            <input type="email" class="form-control" id="memberInputName" placeholder="Enter name"> <br>
+
+            <label for="memberInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="memberInputEmail1" aria-describedby="emailCaption" placeholder="Enter email">
+            <small id="emailCaption" class="form-text text-muted">We email you your booking and payment confirmations</small>
+            <small id="emailCaption" class="form-text text-muted">Developer model reminder: send new member an email with inputed email to create their password. </small> <br>
+
+            <label for="uploadProfile">Add a Profile Picture</label>
+            <input type="file" class="form-control-file" id="uploadProfile"> <br>
+          
+            <label for="memberInputNotes">Any Notes?</label>
+            <input type="form-text" class="form-control" id="memberInputNotes" placeholder="Notes"> 
+          </div>
+
+          <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+        
+
+      </div> <!-- col-0 div containing profiles --> 
+    </div> 
+  </div> <!-- container div -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -5,65 +5,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="style.css"></head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-  <ul class="nav">
+   <ul class="nav ">
     <li class="nav-item">
       <a href="" class="nav-link active" href="#">Cospace</a>
     </li>
     <li class="nav-item">
       <a class="nav-link active" href="login.html">Logout</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Admin</a>
+    </li>
   </ul>
 
-  <div class="container"> <!-- everything sits inside here -->
+  <div class="container">
     <div class="row">
       <div class="col-3"> 
         <div class="nav navbar">
           
           <div class="w-100"></div>
-          <div class="col-3">
-              <ul class="nav-item">
-                <a class="nav-link" href="invoices.html">
-                  Invoices
-                </a>
-              </ul>
-          </div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_invoices.html">
+                    Invoices
+                  </a>
+                </ul>
+            </div>
           <div class="w-100"></div>
-          <div class="col-3">
-              <ul class="nav-item">
-                <a class="nav-link" href="calendar.html">
-                  Calender
-                </a>
-              </ul>
-          </div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_calendar.html">
+                    Calendar
+                  </a>
+                </ul>
+            </div>
         
           <div class="w-100"></div>
+            <div class="col-3">
+              <ul class="nav-item">
+                  <a class="nav-link" href="admin_profile.html">
+                    Profile
+                  </a>
+              </ul>
+            </div>
+
+          <div class="w-100"></div>
           <div class="col-3">
-            <ul class="nav-item">
-                <a class="nav-link" href="profile.html">
-                  Profile
-                </a>
-            </ul>
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_settings.html">
+                    Settings
+                  </a>
+                </ul>
           </div>
 
           <div class="w-100"></div>
           <div class="col-3">
-              <ul class="nav-item">
-                <a class="nav-link" href="settings.html">
-                  Settings
-                </a>
-              </ul>
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_members.html">
+                    Members
+                  </a>
+                </ul>
           </div>
+
+          <div class="w-100"></div>
+          <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_resource.html">
+                    Resources
+                  </a>
+                </ul>
+          </div>
+
+          <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_rooms.html">
+                    Rooms
+                  </a>
+                </ul>
+            </div>
+
+          <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_analytics_bookings.html">
+                    Analytics
+                  </a>
+                </ul>
+            </div>            
         </div>
       </div>
-          
+
           <!-- This is the calendar division -->
       <div class="col-9">
         <!-- insert all calender code here -->
         <h1>Calendar</h1>
-        <p> --------------------------------Developer notes----------------------- <br>User will select calendar day, and select room by selecting room from interactive display below. until then the select room dropdowmenu will be used.
+        <p> --------------------------------Developer notes----------------------- <br> Admin will select calendar day, and select room by selecting room from interactive display below. until then the select room dropdowmenu will be used.
         <br>--------------------------------Developer notes-----------------------  </p>
         <table border="1">
           <th colspan="7">December 2013</th>
@@ -179,22 +218,22 @@
               <li>Access to water/coffee/fridge and microwave</li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-6 ">
+          <div class="col-xs-12 col-sm-9 ">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary active">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> Charge to my card
+              <label class="btn btn-secondary"> 
+                <input type="radio" name="options" id="option3" autocomplete="off" checked> Charge member
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="option2" autocomplete="off"> Pay in Cash
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option3" autocomplete="off" checked> Free booking
               </label>
             </div>
             <br><br>
             <button class="btn btn-primary">
               Book now
             </button><br>
-              <p>We'll send you an email with all the details</p>
+              <p>We'll send you an email with all the details, and we'll email the members with their bookings</p>
           </div>
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-12 col-sm-3">
             <h5>Overview</h5>
             <p>24th-26th May</p>
             <p>Price/day: 700 php 
@@ -208,9 +247,11 @@
         </div> <!-- calendar end -->
       </div>
 
+      
+      
+      </div>
     </div>
   </div>
-
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
