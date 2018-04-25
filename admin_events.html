@@ -98,11 +98,11 @@
         </div>
       </div>
 
-          <!-- This is the calendar division -->
+          <!-- This is the event booking division -->
       <div class="col-9">
-        <!-- insert all calender code here -->
-        <h1>Calendar</h1>
-        <p> --------------------------------Developer notes----------------------- <br> Admin will select calendar day, and select room by selecting room from interactive display below. until then the select room dropdowmenu will be used.
+        <!-- insert all event booking code here -->
+        <h1>Events</h1>
+        <p> --------------------------------Developer notes----------------------- <br> Admin will select calendar day, the event will be after hours, so a separate calendar has to be used for events compared to normal bookings. 
         <br>--------------------------------Developer notes-----------------------  </p>
         <table border="1">
           <th colspan="7">December 2013</th>
@@ -159,83 +159,20 @@
         </table>
         </br>
 
-        <div class="text-center">
-          <a href="https://placeholder.com"><img src="http://via.placeholder.com/700x180" alt="birds eye view oco-working space"></a> 
-          <br><br>
-        </div>
-
         <div class="row">
-          <div class="col-6">
-            <br>
-            <div class="btn-group">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopuptrue" aria-expanded="false">
-                Select room
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Meeting room</a>
-                <a class="dropdown-item" href="#">A1</a>
-                <a class="dropdown-item" href="#">A2</a>
-                <a class="dropdown-item" href="#">A3</a>
-                <a class="dropdown-item" href="#">A4</a>
-                <a class="dropdown-item active" href="#">A5(selected)</a>
-                <a class="dropdown-item" href="#">B1</a>
-                <a class="dropdown-item" href="#">B2</a>
-                <a class="dropdown-item" href="#">B3</a>
-                <a class="dropdown-item" href="#">Hot table back</a>
-                <a class="dropdown-item" href="#">Hot table front</a>
-              </div>
-            </div> 
-              <p>Room A1</p>
-            <div class="btn-group">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopuptrue" aria-expanded="false">
-                Select extra days?
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Tomorrow</a>
-                <a class="dropdown-item" href="#">22th</a>
-                <a class="dropdown-item" href="#">23th</a>
-                <a class="dropdown-item active" href="#">24th</a>
-                <a class="dropdown-item active" href="#">25th (selected)</a>
-                <a class="dropdown-item active" href="#">26th</a>
-                <a class="dropdown-item" href="#">27th</a>
-                <a class="dropdown-item" href="#">28th</a>
-                <a class="dropdown-item" href="#">29th</a>
-                <a class="dropdown-item" href="#">30th</a>
-                <a class="dropdown-item" href="#">31st</a>
-                <a class="dropdown-item" href="#">1st</a>
-              </div>  
-            </div>
-              Wed 24th - friday 26th     
-            <br><br> 
-          </div>
-          <div class="col-6">
-            <h4>Room A1 comes with:</h4>
+          <div class="col-7">
+            <h4>Main Room Facilities</h4>
             <ul>
-              <li>Airconditioning
-              <li>Whiteboard and white board pen</li>
-              <li>7m Sqr floor space, with six tables, six chairs</li>
-              <li>HD Television with chromecast</li>
+              <li>Projecter</li>
+              <li>Microphone and sound system</li>
+              <li>50m<sup>2</sup> floor space, with 15 tables, 60 chairs</li>
               <li>Access to water/coffee/fridge and microwave</li>
+              <li>Air conditioning</li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-9 ">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary"> 
-                <input type="radio" name="options" id="option3" autocomplete="off" checked> Charge member
-              </label>
-              <label class="btn btn-secondary active">
-                <input type="radio" name="options" id="option3" autocomplete="off" checked> Free booking
-              </label>
-            </div>
-            <br><br>
-            <button class="btn btn-primary">
-              Book now
-            </button><br>
-              <p>We'll send you an email with all the details, and we'll email the members with their bookings</p>
-          </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="col-5">
             <h5>Overview</h5>
-            <p>24th-26th May</p>
+            <p>25th of May</p>
             <p>Price/day: 700 php 
             <br>
               Total price: 1400 php</p>
@@ -244,12 +181,70 @@
             <br>
             <br>
           </div>
-        </div> <!-- calendar end -->
-      </div>
+        </div>
 
-      
-      
-      </div>
+        <div class="row">
+          <div class="col-12 ">
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopuptrue" aria-expanded="false">
+                Select room
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Main room</a>
+              </div>
+            </div> 
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked>Admin Reserve
+              </label>
+
+            <div class="btn-group" role="group">
+              <button id="bookAsMember" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Charge:
+              </button>
+                <div class="dropdown-menu" aria-labelledby="bookMemberLabel">
+                  <a class="dropdown-item active" href="#">Nobody</a>
+                  <a class="dropdown-item" href="#">Steve</a>
+                  <a class="dropdown-item" href="#">Sally</a>
+                  <a class="dropdown-item" href="#">Megan</a>
+                  <a class="dropdown-item" href="#">Jake</a>
+                  <a class="dropdown-item" href="#">Steve</a>
+                  <a class="dropdown-item" href="#">Sally</a>
+                  <a class="dropdown-item" href="#">Megan</a>
+                  <a class="dropdown-item" href="#">Jake</a>
+                </div>
+              </div>
+              <div class="btn-group" role="group">
+              <button id="addPeople" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Add people 
+              </button>
+                <div class="dropdown-menu" aria-labelledby="addPeopleLabel">
+                  <a class="dropdown-item" href="#">Steve</a>
+                  <a class="dropdown-item" href="#">Sally</a>
+                  <a class="dropdown-item" href="#">Megan</a>
+                  <a class="dropdown-item" href="#">Jake</a>
+                  <a class="dropdown-item" href="#">Steve</a>
+                  <a class="dropdown-item" href="#">Sally</a>
+                  <a class="dropdown-item" href="#">Megan</a>
+                  <a class="dropdown-item" href="#">Jake</a>
+                </div>
+              </div>
+            </div>
+
+            
+            <br><br>
+            <button class="btn btn-primary">
+              Book now
+            </button><br>
+              <p>We'll send you an email with all the details, and we'll email the members with their bookings</p>
+              <br>
+              <br>
+              <br>
+              <br>
+          </div>  
+          
+        </div>
+      </div> <!-- events end -->
     </div>
   </div>
 
