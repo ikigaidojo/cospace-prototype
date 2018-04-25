@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Co-space</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style.css"></head>
+
+<body>
+  
+  <ul class="nav ">
+    <li class="nav-item">
+      <a href="" class="nav-link active" href="#">Cospace</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="login.html">Logout</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Member</a>
+    </li>
+  </ul>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-3"> 
+        <div class="nav navbar">
+          <div class="w-100"></div>
+            <div class="col-3">
+
+                <ul class="nav-item">
+                  <a class="nav-link" href="invoices.html">
+                    Invoices
+                  </a>
+                </ul>
+            </div>
+          <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="calendar.html">
+                    Calendar
+                  </a>
+                </ul>
+
+            </div>
+          <div class="w-100"></div>
+            <div class="col-3">
+              <ul class="nav-item">
+
+                  <a class="nav-link" href="profile.html">
+                    Profile
+                  </a>
+              </ul>
+            </div>
+          <div class="w-100"></div>
+            <div class="col-3">
+
+                <ul class="nav-item">
+                  <a class="nav-link" href="settings_basic.html">
+                    Settings
+                  </a>
+                </ul>
+            </div>
+
+          </div>
+        </div>
+
+      
+        <div class="col-9">
+          <h1> Settings </h1>
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a href="settings_basic.html" class="nav-link">Basic</a></li>
+          <li class="nav-item"><a href="settings_change_password.html" class="nav-link">Change Password</a></li>
+          <li class="nav-item"><a href="settings_email.html" class="nav-link ">Email</a></li>
+          <li class="nav-item"><a href="settings_credit_card.html" class="nav-link active">Credit Card</a></li>
+        </ul>
+          <!-- Payment Information -->
+          <div class="container">
+           <h3>Credit Card Information:</h3>
+            <form>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Name on Card</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" placeholder="Name on Card">
+                </div>
+              </div>
+               <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Credit Card Number</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Credit Card Number">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Expiration Date</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Expiration Date">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-2 col-form-label">CVC</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="CVC">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div> <!-- all -->
+    </div>
+
+</body>
+</html>

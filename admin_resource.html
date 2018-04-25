@@ -60,7 +60,7 @@
           <div class="w-100"></div>
             <div class="col-3">
                 <ul class="nav-item">
-                  <a class="nav-link" href="admin_settings.html">
+                  <a class="nav-link" href="admin_settings_basic.html">
                     Settings
                   </a>
                 </ul>
@@ -109,15 +109,87 @@
 
         <div class="col-9">
           <h1>Resources</h1>
-          <p><a data-toggle="modal" data-target="#nameModal">NAME </a> </p>
-          <p><a data-toggle="modal" data-target="#nameModal">NAME </a> </p>
-          <p><a data-toggle="modal" data-target="#nameModal">NAME </a> </p>
-
-          <button data-toggle="modal" data-target="#createModal">
-            Create new
+          <div class="row form-group">
+          <button data-toggle="modal" data-target="#createModal" class="btn btn-primary">
+            Add New Resource
           </button>
+          </div>
+          <div class="row">
+            <div class="card">
+              <img src="http://via.placeholder.com/200x200" alt="profile">
+              <div class="card-body">
+                <h5 class="card-title">Unit Name</h5>
+                <p class="card-text">Price: $ 0.00 </p>
+                <p class="card-text">Serial Number: SNQWER12345 </p>
+                <div class="text-right">
+                  <button data-toggle="modal" data-target="#editModal" class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://via.placeholder.com/200x200" alt="profile">
+              <div class="card-body">
+                <h5 class="card-title">Unit Name</h5>
+                <p class="card-text">Price: $ 0.00 </p>
+                <p class="card-text">Serial Number: SNQWER12345 </p>
+                <div class="text-right">
+                  <button data-toggle="modal" data-target="#editModal" class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://via.placeholder.com/200x200" alt="profile">
+              <div class="card-body">
+                <h5 class="card-title">Unit Name</h5>
+                <p class="card-text">Price: $ 0.00 </p>
+                <p class="card-text">Serial Number: SNQWER12345 </p>
+                <div class="text-right">
+                  <button data-toggle="modal" data-target="#editModal" class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://via.placeholder.com/200x200" alt="profile">
+              <div class="card-body">
+                <h5 class="card-title">Unit Name</h5>
+                <p class="card-text">Price: $ 0.00 </p>
+                <p class="card-text">Serial Number: SNQWER12345 </p>
+                <div class="text-right">
+                  <button data-toggle="modal" data-target="#editModal" class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://via.placeholder.com/200x200" alt="profile">
+              <div class="card-body">
+                <h5 class="card-title">Unit Name</h5>
+                <p class="card-text">Price: $ 0.00 </p>
+                <p class="card-text">Serial Number: SNQWER12345 </p>
+                <div class="text-right">
+                  <button data-toggle="modal" data-target="#editModal" class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="http://via.placeholder.com/200x200" alt="profile">
+              <div class="card-body">
+                <h5 class="card-title">Unit Name</h5>
+                <p class="card-text">Price: $ 0.00 </p>
+                <p class="card-text">Serial Number: SNQWER12345 </p>
+                <div class="text-right">
+                  <button data-toggle="modal" data-target="#editModal" class="btn btn-primary">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div class="modal fade" id="nameModal" role="dialog">
+         <!--  <div class="modal fade" id="nameModal" role="dialog">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -135,25 +207,69 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
               <div class="modal fade" id="createModal" role="dialog">
             <div class="modal-dialog">
               <!-- Modal content-->
               <div class="modal-content">
                 <div class="modal-header">
+                  <h4 class="modal-title">Add New Resource</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">NAME: Name</h4>
                 </div>
                 <div class="modal-body">
-                  <h4>Description: </h4>
-                  <p>Tart topping jelly. Dessert danish tootsie roll donut cheesecake. Tart dragée cake chocolate cake cupcake marzipan jujubes. Candy tart marshmallow brownie jujubes. Brownie sugar plum candy canes muffin tart carrot cake icing marshmallow. Chupa chups cake cotton candy oat cake marshmallow donut jelly beans gummi bears.</p>
-                  <input type="text" placeholder="Price">
-                  <input type="text" placeholder="Unit">
+                  <form>
+                    <div class="form-group row">
+                      <input type="button" class="form-control btn btn-primary col-8" value="Upload Picture">
+                      <label class="col-4">No file chosen</label>
+                    </div>
+                    <div class="form-group row">
+                      <input type="text" class="form-control" placeholder="Unit Name">
+                    </div>
+                     <div class="form-group row">
+                      <input type="text" class="form-control" placeholder="Price">
+                    </div>
+                    <div class="form-group row">
+                      <input type="text" class="form-control" placeholder="Serial Number">
+                    </div>
+                  </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Create</button>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="editModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Edit Resource</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group row">
+                      <input type="button" class="form-control btn btn-primary col-8" value="Upload Picture">
+                      <label class="col-4">No file chosen</label>
+                    </div>
+                    <div class="form-group row">
+                      <input type="text" class="form-control" placeholder="Unit Name">
+                    </div>
+                     <div class="form-group row">
+                      <input type="text" class="form-control" placeholder="Price">
+                    </div>
+                    <div class="form-group row">
+                      <input type="text" class="form-control" placeholder="Serial Number">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
                 </div>
               </div>
             </div>
