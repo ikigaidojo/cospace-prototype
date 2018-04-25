@@ -113,7 +113,27 @@
         </ul>
         
         <!-- member's creator -->
-        
+        <form>
+          <div class="form-group">
+            <h3 class="form-control-plaintext">Enter details</h3>
+
+            <label for="memberInputName">Name</label>
+            <input type="email" class="form-control" id="memberInputName" placeholder="Enter name"> <br>
+
+            <label for="memberInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="memberInputEmail1" aria-describedby="emailCaption" placeholder="Enter email">
+            <small id="emailCaption" class="form-text text-muted">We email you your booking and payment confirmations</small>
+            <small id="emailCaption" class="form-text text-muted">Developer model reminder: send new member an email with inputed email to create their password. </small> <br>
+
+            <label for="uploadProfile">Add a Profile Picture</label>
+            <input type="file" class="form-control-file" id="uploadProfile"> <br>
+          
+            <label for="memberInputNotes">Any Notes?</label>
+            <input type="form-text" class="form-control" id="memberInputNotes" placeholder="Notes"> 
+          </div>
+
+          <button type="submit" class="btn btn-primary">Create</button>
+        </form>
         
 
       </div> <!-- col-0 div containing profiles --> 
