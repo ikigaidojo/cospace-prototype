@@ -8,17 +8,26 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-   <ul class="nav ">
-    <li class="nav-item">
-      <a href="" class="nav-link active" href="#">Cospace</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="login.html">Logout</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Admin</a>
-    </li>
+   <ul class="nav navbar d-flex justify-content-between align-items-center">
+     <div class="d-flex"> 
+      <div >
+        <li class="nav-item">
+          <a href="" class="nav-link" href="#">Cospace</a>
+        </li>
+      </div>
+      <div>
+        <li class="nav-item ">
+          <a class="nav-link disabled" href="#">Admin</a>
+        </li>
+      </div>
+    </div>
+    <div>
+      <li class="nav-item ">
+        <a class="nav-link active text-left" href="login.html">Logout</a>
+      </li>
+    </div>
   </ul>
+  
 
   <div class="container">
     <div class="row">
@@ -104,11 +113,20 @@
                   </a>
                 </ul>
             </div>
-            
+        
+        <div class="w-100"></div>
+            <div class="col-3">
+                <ul class="nav-item">
+                  <a class="nav-link" href="admin_membership.html">
+                    Memberships
+                  </a>
+                </ul>
+            </div>
+
           </div>
         </div>
 
-        
+      
 
         <div class="col-9">
           <h1>Analytics</h1>
